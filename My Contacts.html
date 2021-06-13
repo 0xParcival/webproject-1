@@ -1,0 +1,187 @@
+<!doctype html>
+<html>
+<head>
+<title> My Certifications</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-image:url(img/bg5.jpg);
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+.linkcolor:link, .linkcolor:visited {
+  background-color: #000000;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.linkcolor:hover, .linkcolor:active {
+  background-color: rgb(128, 245, 225);
+}
+/* Create two columns/boxes that floats next to each other */
+.navleft {
+  float: left;
+  width: 15%;
+  height: 600px; /* only for demonstration, should be removed */
+  background-image: url(img/bg14.jpg);
+  padding: 20px;
+}
+.navright {
+  float: right;
+  width: 15%;
+  height: 600px; /* only for demonstration, should be removed */
+  background-image: url(img/bg14.jpg);
+  padding: 20px;
+}
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+.row2 {
+  display: flex;
+}
+
+.column2 {
+  flex: 33.33%;
+  padding: 5px;
+}
+
+.img2 {
+  
+  border-radius: 50%;
+}
+.img1 {
+  
+  border-radius: 100%;
+}
+
+article {
+  float: left;
+  padding: 10px;
+  width: 70%;
+  background-image: url(img/);
+  height: 600px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-image: url(img/bg10.jpg);
+  background-color: #777;
+  padding: 35px;
+  text-align: center;
+  color: white;
+}
+@media screen and (max-width:800px){
+  .linkcolor:active,.linkcolor:hover,.linkcolor:link,.linkcolor:visited{
+    width: 100%;
+  }
+}
+@media screen and (max-width:800px) {
+  /* For mobile phones: */
+  .navleft, .main, .navright,.iframe-container{
+    width: 100%;
+  }
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: auto;
+    height: auto;
+  }
+
+}
+</style>
+</head>
+<body>
+<header>
+  <h2>MyContacts</h2>
+</header>
+
+<section>
+  <nav class="navleft">
+    <ul>
+      <li><p><a href="index.html" class="linkcolor">MyProfile</a></p></li>
+      <li><a href="My Certifications.html"class="linkcolor">MyCertifications</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+  <p></p>
+ <div class="row">
+  <div class="column">
+    <p>Our Youtube channel</p>
+    <a href="https://www.youtube.com/c/EverythingYTLearnEverything" target="_blank" rel="noopener noreferrer">
+    <img src="img/youtube.png" alt="My Youtube channel" width="100px%" class="img2">
+ </a>
+ </div>
+ <div class="column">
+    <P>Mail Me</P>
+    <a href="mailto:keerthi267140@gmail.com">
+    <img src="img/mail.jpg" alt="My mail" width="100px" class="img1">
+    </a>   
+   </div>
+</div>
+<div class="row">
+ <div class="column">  
+      <p>My Linkedin</p>
+        <a href="https://www.linkedin.com/in/keerthismiley" target="_blank" rel="noopener noreferrer">
+        <img src="img/linkin.png" alt="My linkedin account" width ="100px" class="img2">
+      </a>
+     </div>
+ <div class="column">
+      <p>My Instagram</p>
+        <a href="https://www.instagram.com/keerthi_smiley_007/" target="_blank" rel="noopener noreferrer">
+        <img src="img/instagram.png" alt="My Instagram" width="100px" class="img2"></a>   
+      </div>
+   </div> 
+      <div class="row">
+        <div class="column">
+       <p class = "textcenter" style="color: rgb(0, 0, 0);">Our Blogger</p>
+       <p><a href="https://everythingyt007.blogspot.com" target="_blank" rel="noopener noreferrer">
+        <img src="img/blogger.png" alt="Our Blogger" width="100px" class="img2">
+        </a>
+       </p>
+      </div>
+     </div>
+ </article>
+ <nav class="navright">
+  </nav>
+</section>
+
+<footer>
+</footer>
+
+</body>
+</html>

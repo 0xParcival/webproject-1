@@ -1,0 +1,159 @@
+<!doctype html>
+<html>
+<head>
+<title> My Certifications</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-image: url(img/bg1.jpg);
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+.linkcolor:link, .linkcolor:visited {
+  background-color: #000000;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+}
+
+img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+.linkcolor:hover, .linkcolor:active {
+  background-color: rgb(128, 245, 225);
+}
+/* Create two columns/boxes that floats next to each other */
+.navleft {
+  float: left;
+  width: 15%;
+  height: 600px; /* only for demonstration, should be removed */
+  background-image: url(img/bg11.jpg);
+  padding: 20px;
+}
+.navright {
+  float: right;
+  width: 15%;
+  height: 600px; /* only for demonstration, should be removed */
+  background-image:url(img/bg11.jpg);
+  padding: 20px;
+}
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+
+article {
+  float: left;
+  padding: 10px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 600px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-image: url(img/bg10.jpg);
+  background-color: #777;
+  padding: 35px;
+  text-align: center;
+  color: white;
+}
+@media screen and (max-width:800px){
+  .linkcolor:active,.linkcolor:hover,.linkcolor:link,.linkcolor:visited{
+    width: 100%;
+  }
+}
+@media screen and (max-width:800px) {
+  /* For mobile phones: */
+  .navleft, .main, .navright{
+    width: 100%;
+  }
+}
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: auto;
+    height: auto;
+  }
+
+}
+</style>
+</head>
+<body>
+<header>
+  <h2>My Certifications</h2>
+</header>
+
+<section>
+  <nav class="navleft">
+    <ul>
+      <li><p><a href="index.html" class="linkcolor">MyProfile</a></p></li>
+      <li><a href="My Contacts.html" class="linkcolor">MyContacts</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+  <p><h2>Here my certificates in cyper security:</h2></p>
+ <div class="row">
+  <div class="column">
+    <p><b>Web Pentesting</b></p>
+    <a target="_blank" href="cerificates/cert1.jpg">
+      <img src="cerificates/cert1.jpg" alt="Web Pentesting" style="width:150px">
+    </a>
+ </div>
+ <div class="column">
+     <p><b>Introdection to CyberSecurity </b></p>
+  <a target="_blank" href="cerificates/cert2.PNG">
+    <img src="cerificates/cert2.PNG" alt="Introdection to CyberSecurity" style="width:150px">
+  </a>
+  </div>
+  </div>
+ </article>
+ <nav class="navright">
+ </nav>
+</section>
+<footer>
+  <p><a href="mailto:keerthi267140@gmail.com" class="linkcolor">Send email</a></p>
+</footer>
+
+</body>
+</html>
+

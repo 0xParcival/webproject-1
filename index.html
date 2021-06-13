@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>My Website</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-image: url(img/bg9.jpg);
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+.center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+.linkcolor:link, .linkcolor:visited {
+  background-color: #000000;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display:inline-block;
+}
+
+.linkcolor:hover, .linkcolor:active {
+  background-color: rgb(91, 253, 226);
+}
+
+/* Create two columns/boxes that floats next to each other */
+.navleft {
+  float: left;
+  width: 15%;
+  height: 800px; /* only for demonstration, should be removed */
+  background: #ccc;
+  background-image: url(img/bg13.jpg);
+  padding: 20px;
+}
+.navright {
+  float: left;
+  width: 15%;
+  height: 800px; /* only for demonstration, should be removed */
+  background: #ccc;
+  background-image: url(img/bg13.jpg);
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+.center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+article {
+  float: left;
+  padding: 10px;
+  width: 70%;
+  background-color: #e4e3e3;
+  height: 800px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.textcenter{
+  text-align: center;
+}
+/* Style the footer */
+footer {
+  background-image: url(img/bg10.jpg);
+  background-color: #777;
+  padding: 30px;
+  height: 100px;
+  text-align: center;
+  color: white;
+}
+
+.responsive-youtube
+{overflow:hidden; padding-bottom:50%; position:relative; height:0;}
+.responsive-youtube iframe
+{
+ top:0; height:100%; width: 100%; position:absolute;}
+
+.img1 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+}
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media screen and (max-width:800px){
+  .linkcolor:active,.linkcolor:hover,.linkcolor:link,.linkcolor:visited{
+    width: 100%;
+  }
+}
+@media screen and (max-width:800px) {
+  /* For mobile phones: */
+  .navleft, .main, .navright,.iframe-container{
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+<header>
+  <h2>MyProfile</h2>
+</header>
+
+<section style="overflow: auto;">
+  
+   <nav class="navleft">
+     <ul>
+      <li><p><a href="My Certifications.html" class="linkcolor">MyCertifications</a></p></li>
+      <li><a href="My Contacts.html" class="linkcolor">MyContacts</a></li>
+     </ul>
+    </nav>
+  
+  <article class="main">
+    
+<h1>Hi,I am Keerthivasan B</h1>
+
+    <ul>
+    
+      <p><li>Studying 1 year BE.Computer Science in K.S.Rangasamy College of Technology,Tiruchengode,Namakkal(Dt),Tamil Nadu.</li></p>
+
+      <p><li>My Hobbies are youtube creater,dismantling all eletronics product ,watching anime,studying in my interest topics and listeing to music(sometimes).</li></p>
+
+      <p><li>I am interested in cyber security,web development,app development But Now I am studying in cyber security in udemy and cisco(netcad).</li></p>
+
+      <p><li>I finished one course is "Web Pentesting"and Now I am studying course is "learn Ethical Hacking with python".</li></p>
+     
+      <p><li>My aim is studying proper in my interested topics.</li></p>
+       
+    </ul>
+
+     <p class="textcenter">Me and My Friends are cerated Youtube channel we named "Everything Yt".This is one of  our Youtube video </p>
+    
+    
+    
+   <p>
+     <div class="responsive-youtube">
+     <iframe width="500" height="100" src="https://www.youtube.com/embed/_qNxqzIYuoo" title="YouTube video player" frameborder="0" 
+     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+     </iframe></div>
+   </p>
+
+
+  </article>
+  
+   <nav class="navright">
+     <p class ="textcenter"style="color: #ffffff;">Our Youtube channel</p>
+     <a href="https://www.youtube.com/channel/UCjH3l0GCD2FdXn8LMnblWmA" target="_blank" rel="noopener noreferrer">
+     <img src="img/youtube.png" alt="Our Youtube channel" width="50px%" class="img1">
+     </a>
+     <p class = "textcenter" style="color: rgb(255, 255, 255);">Our Blogger</p>
+     <p><a href="https://everythingyt007.blogspot.com" target="_blank" rel="noopener noreferrer">
+     <img src="img/blogger.png" alt="Our Blogger" width="50px%" class="img1">
+     </a></p>
+    </nav>
+   
+  
+</section>
+
+<footer>
+  <p><a href="mailto:keerthi267140@gmail.com" class="linkcolor">Send email</a></p>
+</footer>
+
+</body>
+</html>
